@@ -811,10 +811,7 @@ h6,
 	position: relative;
 	font-size: 80px;
 }
-.info-box3 .img i { 
-	font-size: inherit; 
-	color: rgb(12, 112, 176); 
-}
+.info-box3 .img i { font-size: inherit; color: #DF1D37; }
 .info-box3 .info {
 	position: relative;
 	padding: 30px;
@@ -878,8 +875,8 @@ h6,
 	margin-top: 20px;
 }
 .popup-form .btn:hover{
-	background-color: #0C70B0;;
-	border-color: #0C70B0;;
+	background-color: #DF1D37;
+	border-color: #DF1D37;
 	color: #fff;
 }
 .popup-form .alert{ font-size: 14px; }
@@ -979,7 +976,6 @@ h6,
 }
 .intro-section-2 .content > img{
 	margin-bottom: 30px;
-	width: 100%;
 }
 .intro-section-2 .content .main-text,
 .intro-section-2 .content .sub-text,
@@ -993,7 +989,7 @@ h6,
 }
 .intro-section-2 .content .diff-title small {
 	font-size: 35px;
-	/*font-family: 'Rancho', cursive;*/
+	font-family: 'Rancho', cursive;
 	margin-bottom: 20px;
 }
 .intro-section-2 .content small { 
@@ -1094,7 +1090,7 @@ h6,
 .intro-section-2 .table-booking .btn:before { right: -60px; }
 .intro-section-2 .clock-wrp .container{ width: auto; }
 .intro-section-2 .clock-wrp { 
-	background-color: rgba(12, 112, 176, 0.8);
+	background-color: rgba(223, 29, 55, 0.8);
 	border-top-left-radius: 100px;
 	border-bottom-left-radius: 100px;
 }
@@ -1396,7 +1392,7 @@ h6,
 	position: relative;
 	border-radius: 100%;
 	background-color: #f3f4f5;
-	color: rgb(12, 112, 176);
+	color: #DF1D37;
 }
 .contact-box2 .img > span{
 	font-size: 26px;
@@ -1410,10 +1406,10 @@ h6,
 	font-size: 24px;
 }
 .contact-box2:hover:after{
-	background-color: rgb(12, 112, 176);
+	background-color: #DF1D37;
 }
 .contact-box2:hover .img{
-	background-color: rgb(12, 112, 176);
+	background-color: #DF1D37;
 	color: #fff;
 }
 

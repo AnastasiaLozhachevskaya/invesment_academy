@@ -25,12 +25,12 @@ nc.elcheck = function(el) {
 }
 
 /*----------  MEDIAQUARY  ----------*/
-$.mediaquery({
-	minWidth     : [ 200, 480, 600, 768, 992, 1200 ],
-	maxWidth     : [ 1199, 991, 767, 599, 479 ],
-	minHeight    : [ 400, 800 ],
-	maxHeight    : [ 800, 400 ]
-});
+// $.mediaquery({
+// 	minWidth     : [ 200, 480, 600, 768, 992, 1200 ],
+// 	maxWidth     : [ 1199, 991, 767, 599, 479 ],
+// 	minHeight    : [ 400, 800 ],
+// 	maxHeight    : [ 800, 400 ]
+// });
 
 /*----------  MOBILE MENU  ----------*/
 nc.mobmenu = function(el) {

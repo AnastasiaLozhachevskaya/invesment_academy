@@ -1,5 +1,3 @@
-/* Clock
-********************************************/
 /*!
  * jQuery Countdown plugin v1.0
  * http://www.littlewebthings.com/projects/countdown/
