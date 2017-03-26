@@ -1,0 +1,155 @@
+/**
+*****************************************************************
+* AUTHOR :: NCodeArt
+* PROJECT :: NC-Roll Coming-Soon Page
+* VERSION :: 0.05
+* 
+* This file is licensed to NCodeArt. 
+* it's not allowed to copy or reuse it Copyright NCodeArt 2015
+*****************************************************************
+*/
+
+
+/**
+******************************************************************
+*	DESKTOP LAYOUT 
+******************************************************************
+*/
+@media (min-width: 1200px) {
+	
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	/*----------  COUNTDOWN  ----------*/
+	.countdown-widget .dash{ min-width: 180px; }
+	.countdown-widget .dash .digit{ font-size: 70px; }
+
+	/*----------  INTRO-SECTION-1  ----------*/
+	
+
+	/*----------  INTRO-SECTION-2  ----------*/
+	
+	.intro-section-2 .clock-wrp{ padding: 20px 0; }
+	.intro-section-2 .clock .countdown-widget .dash{ padding: 0 10px; min-width: auto; }
+	.intro-section-2 .countdown-widget .dash .digit{ font-size: 50px; }
+
+	
+	
+}
+
+@media (min-width: 992px) {
+	
+	
+}
+
+/**
+******************************************************************
+*	MOBILE & TABLET COMMON
+******************************************************************
+*/
+@media (min-width: 200px) and (max-width: 991px) {
+	
+
+	
+
+	/*----------  INTRO-SECTION-2  ----------*/
+	
+	.intro-section-2 .clock-wrp{ 
+		padding: 20px 0; 
+		border-top-left-radius: 0px;
+    	border-bottom-left-radius: 0px;
+    	right: 0;
+    	margin-top: 40px;
+	}
+	.intro-section-2 .clock .countdown-widget .dash{ padding: 0 10px; min-width: auto; }
+	.intro-section-2 .countdown-widget .dash .digit{ font-size: 50px; }
+		
+}
+
+/**
+******************************************************************
+*	TABLET
+******************************************************************
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+	/*----------  COUNTDOWN  ----------*/
+	.countdown-widget .dash{ min-width: 150px; }
+	.countdown-widget .dash .digit{ font-size: 50px; }
+
+	
+
+	
+}
+
+/**
+******************************************************************
+*	MOBILE
+******************************************************************
+*/
+@media (min-width: 200px) and (max-width: 767px) {	
+
+	
+	
+	
+
+}
+@media (min-width: 600px) and (max-width: 767px) {
+
+	/*----------  COUNTDOWN  ----------*/
+	.countdown-widget .dash{ min-width: 110px; }
+	.countdown-widget .dash .digit{ min-width: auto; font-size: 40px; }
+
+	
+	
+
+	/*----------  INTRO-SECTION-2  ----------*/
+	.intro-section-2 .clock .countdown-widget .dash{ padding: 0 20px; min-width: auto; }
+	.intro-section-2 .countdown-widget .dash .digit{ font-size: 50px; }
+
+	
+
+	
+}
+@media (min-width: 480px) and (max-width: 599px) {
+
+	/*----------  COUNTDOWN  ----------*/
+	.countdown-widget .dash{ min-width: 90px; }
+	.countdown-widget .dash .digit{ min-width: auto; font-size: 35px; }
+
+	
+	/*----------  INTRO-SECTION-2  ----------*/
+	
+	.intro-section-2 .clock .countdown-widget .dash{ padding: 0 20px; min-width: auto; }
+	.intro-section-2 .countdown-widget .dash .digit{ font-size: 40px; min-width: auto; }
+
+
+}
+@media (min-width: 200px) and (max-width: 479px) {
+	
+	/*----------  COUNTDOWN  ----------*/
+	.clock .countdown-widget .dash{ margin: 0; }
+	
+	
+	.countdown-widget .dash{ min-width: 50%; }
+	.countdown-widget .dash .digit{ min-width: auto; font-size: 30px; }
+
+	.intro-section-2 .clock .countdown-widget .dash{ 
+		min-width: 46%; 
+		border-right: none;
+		border: 1px solid rgba(255,255,255,0.1);
+		margin: 3px;	
+	}
+
+	
+	
+	
+	
+	
+
+	
+
+	
+}

@@ -1,0 +1,668 @@
+@import 'modules/base/colors'
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li
+	margin 0
+	padding 0
+	
+a:visited, a:focus
+	text-decoration none
+	color inherit
+
+body
+	font-family 'Lato-Medium'
+	line-height 1.15
+	font-size 18px
+	width 100%
+	background #fff
+	color $blue-text
+	min-width 320px
+	
+	@media all and (max-width: 640px)
+		font-size 15px
+
+h1, h2, h3, h4, h5, h6, label
+	font-family 'IntroRegular'
+	
+h1
+	color $yellow
+	font-size 60px
+	margin-bottom 70px
+	
+	@media all and (max-width: 640px)
+		font-size 30px
+		margin-bottom 30px
+	
+h2
+	font-size 48px
+	text-align center
+	
+	@media all and (max-width: 640px)
+		font-size 25px
+	
+h3
+	font-size 30px
+	
+	@media all and (max-width: 640px)
+		font-size 20px
+	
+h4
+	font-size 36px
+	
+	@media all and (max-width: 640px)
+		font-size 25px
+	
+h5
+	font-size 55px
+	
+	@media all and (max-width: 640px)
+		font-size 30px
+	
+section
+	padding 100px 0
+	position relative
+	
+	@media all and (max-width: 640px)
+		padding 40px 0
+	
+.lato-black
+	font-family 'Lato-Black'
+	
+.intro-font
+	font-family 'IntroRegular'
+	
+.white
+	color #fff
+	
+.yellow
+	color $yellow
+	
+.blue
+	color $blue-heading
+	
+.aling-left
+	text-align left
+	
+.aling-right
+	text-align right
+	
+.no-pad
+	padding 0
+
+.blue-bg
+	background-color $blue-bg
+	
+.section-heading
+	margin-bottom 80px
+	text-align center
+	
+	&--modal
+		margin-bottom 20px
+		
+		& h3
+			font-size 20px
+		
+	
+	@media all and (max-width: 640px)
+		margin-bottom 30px
+	
+.menu
+	list-style-type none
+	float right
+	
+	@media all and (max-width: 992px)
+		display none
+	
+	&__item
+		float left
+		
+		
+		&:not(:last-child)
+			padding 14px 10px
+			
+		&:last-child
+			padding 5px 0px 5px 10px
+		
+	&__link
+		color $blue-bg !important
+		text-decoration none
+		font-size 14px
+		
+		&:after
+			width 0
+			height 5px
+			content ''
+			background-color $yellow
+			display block
+			margin auto
+			transition .5s
+			padding 0
+		
+		&:hover
+			color $yellow !important
+			transition .5s
+			
+			&:after
+				width 100%
+				transition .5s
+				
+.menu
+	&.active
+		display block
+		position absolute
+		top 80px
+		background-color #fff
+		width 100%
+		left 0
+		padding 0px 15px 30px
+		
+		@media all and (max-width: 640px)
+			top 60px
+		
+		& .menu__item
+			float none
+			text-align center
+			
+			&:last-child
+				padding 5px 0 0
+			
+		& .menu__link
+			
+			&:hover
+				&:after
+					width 100px
+
+.hamburger
+	display none
+	float right
+
+	@media all and (max-width: 992px)
+		display block
+
+
+// .hamburger-inner,
+// .hamburger-inner::after,
+// .hamburger-inner::before 
+//     background-color $blue-heading
+
+	
+.btn
+	background linear-gradient($yellow, $dark-yellow)
+	background -ms-linear-gradient($yellow, $dark-yellow)
+	background -webkit-linear-gradient($yellow, $dark-yellow)
+	background -moz-linear-gradient($yellow, $dark-yellow)
+	color $blue-heading
+	display block
+	text-align center
+	width 100%
+	text-decoration none
+	padding 16px 10px
+	margin 0 auto
+	font-size 24px
+	height 60px
+	border none
+	transition 2s
+	font-family 'IntroRegular'
+	
+	@media all and (max-width: 640px)
+		height 50px
+		font-size 15px
+	
+	&:hover
+		text-decoration none
+		background linear-gradient($dark-yellow, $yellow)
+		background -ms-linear-gradient($dark-yellow, $yellow)
+		background -webkit-linear-gradient($dark-yellow, $yellow)
+		background -moz-linear-gradient($dark-yellow, $yellow)
+		color $blue-heading
+		transition 2s
+	
+	&--header
+		width 420px
+		
+		@media all and (max-width: 640px)
+			width 100%
+		
+	&--nav
+		height 40px
+		font-size 14px
+		padding 10px
+		
+		&:after
+			display none
+		
+		&:hover
+			color $blue-bg !important
+	
+.header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 100
+	
+	& a
+		transition .2s
+		color $yellow
+		font-family 'IntroRegular'
+		margin auto
+		
+		&:hover
+			transition .2s
+			text-decoration none
+			color $dark-yellow
+			
+	&__pre-header
+		background-color $blue-bg
+
+	&__nav
+		background-color #fff
+		padding 25px 0
+		
+		@media all and (max-width: 640px)
+			padding 0
+		
+	&__logo
+		float left
+		width 165px
+		
+		@media all and (max-width: 640px)
+			width 127px
+			padding 15px
+		
+			
+.order-call
+	font-size 14px
+	background url('../img/phone.png') no-repeat
+	background-position 10px center
+	display block
+	padding 17px 10px 17px 48px
+	
+	@media all and (max-width: 768px)
+		display none
+	
+	&:hover
+		transition .2s
+		text-decoration none
+		background-color $blue-heading
+		box-shadow inset 0 0 6px 2px #0d131c
+		color $yellow !important
+
+.hero
+	padding 130px 0 130px
+	padding 230px 0 130px
+	width 100%
+	// height 100vh
+	background url('../img/hero-bg.jpg') no-repeat
+	background-size cover
+	text-align center
+	
+	@media all and (max-width: 640px)
+		padding 130px 0 40px
+		height auto
+
+.header-description
+	line-height 1.1
+	margin-bottom 50px
+	
+.date
+	margin-bottom 60px
+	
+.half-background
+	position absolute
+	right 0
+	width 50%
+	height 100%
+	bottom 0
+	
+	@media all and (max-width: 992px)
+		width 100%
+		height 50%
+		left 0
+	
+	&--first
+		background url('../img/bg-2.jpg') no-repeat
+		background-size cover
+		
+	&--second
+		background url('../img/bg-5.jpg') no-repeat
+		background-size cover
+		
+		@media all and (max-width: 992px)
+			background none
+	
+
+.form-container
+	padding-left 35px
+	
+	@media all and (max-width: 992px)
+		padding-left 0
+
+.form
+	margin-top 30px
+	
+	&__input
+		width 100%
+		display block
+		height 60px
+		padding 15px
+		background #fff
+		margin 5px 0 20px
+		border 0
+		
+		@media all and (max-width: 640px)
+			height 50px
+		
+.big-points
+	padding-bottom 60px
+	background-image url('../img/left-points.png'), url('../img/right-points.png')
+	background-repeat no-repeat
+	background-position top left, top right
+	background-size 38%, 38%
+	
+.small-points
+	background-image url('../img/left-points-small.png'), url('../img/right-points-small.png')
+	background-repeat no-repeat
+	background-position bottom left, bottom right
+	background-size 30%, 30%
+	
+.icon-list
+	&__item
+		margin-bottom 40px
+		position relative
+		padding-top 3px
+		min-height 60px
+		
+		&--right
+			padding-right 80px
+			
+		&--left
+			padding-left 80px
+			margin-bottom 35px
+			
+		&--bg
+			background url('../img/svobodnie-mesta.png') no-repeat
+			background-position 280px center  
+				
+			@media all and (max-width: 640px)
+				background none
+		
+	&__icon
+		position absolute
+		top 0
+		width 60px
+		height 60px
+		border-radius 50%
+		background $yellow url('../img/ico.png') no-repeat
+		
+		&--right
+			right 0
+			
+		&--left
+			left 0
+			
+		&--date
+			background-position 0px 0px
+		&--time
+			background-position -60px 0px
+		&--place
+			background-position -120px 0px
+		&--count
+			background-position -180px 0px
+			
+.icon-white
+		background $yellow url('../img/icos-block-3.png') no-repeat
+		
+		&--1
+			background-position 0px 0px
+		&--2
+			background-position -60px 0px
+		&--3
+			background-position -120px 0px
+		&--4
+			background-position -180px 0px
+		&--5
+			background-position -240px 0px
+		&--6
+			background-position -300px 0px
+		&--7
+			background-position -360px 0px
+		&--8
+			background-position -420px 0px
+		&--9
+			background-position -480px 0px
+		&--10
+			background-position -540px 0px
+		
+			
+.results
+	background url('../img/bg-3.jpg') no-repeat
+	background-size cover
+	
+.screens
+	padding-bottom 70px
+	
+.vk-img
+	width 100%
+	margin-bottom 30px
+	
+.add-mgr
+	margin-bottom 60px
+	
+	@media all and (max-width: 640px)
+		margin-bottom 30px
+	
+.footer-form
+	&__item
+		margin 0 1%
+		width 31.1%
+		float left
+		position relative
+		
+		@media all and (max-width: 640px)
+			float none
+			width 100%
+			display block
+			margin 10px 0
+		
+	&__input
+		border 1px solid #c7c7c7
+		margin-top 0
+		
+	&__label
+		position absolute
+		top -25px
+		
+		@media all and (max-width: 640px)
+			position relative
+			top 0
+		
+.footer
+	background-color $blue-heading
+	color #fff
+	font-size 14px
+	
+	&__icon-block
+		position relative
+		padding-left 45px
+		font-size 16px
+		text-align left
+		padding-top 5px
+		padding-bottom 6px
+		margin auto
+	
+	&__icon
+		width 30px
+		height 30px
+		border-radius 50%
+		background-color $blue-heading
+		background-image url('../img/ico-footer.png')
+		background-repeat no-repeat
+		position absolute
+		left 0
+		top 0
+		bottom 0
+		margin auto
+		
+		&--phone
+			background-position 0px 0px
+		&--mail
+			background-position -30px 0px
+		&--location
+			background-position -60px 0px
+			
+		&--header
+			left 15px
+			
+	& a
+		transition .2s
+		color $yellow
+		
+		&:hover
+			transition .2s
+			color $dark-yellow
+			text-decoration none
+	
+	&__contacts
+		font-family 'IntroRegular'
+		text-align center
+		padding 25px 0
+		background-color #212e44
+		color $yellow
+		
+	&__copy
+		padding 23px 0
+		
+		@media all and (max-width: 640px)
+			text-align center
+			
+		& .aling-right
+			@media all and (max-width: 640px)
+				text-align center
+		
+	&__logo
+		@media all and (max-width: 992px)
+			margin auto
+			margin-bottom 20px
+		
+.h-50
+	min-height 50px		
+	display flex
+	
+	@media all and (max-width: 640px)
+		min-height 40px
+
+.decimal
+	text-align center
+	border 10px solid $yellow
+	border-top 0
+	padding 0 20px 0px
+	position relative
+	min-height 165px
+	
+	@media all and (max-width: 992px)
+		min-height 125px
+		width 280px
+		margin 35px auto 30px
+	
+	&:before
+	&:after
+		width 10px
+		height 10px
+		background $yellow
+		position absolute
+		content ''
+		top 0
+		
+	&:before
+		left 0
+		
+	&:after
+		right 0
+	
+	&__number
+		font-size 60px
+		color $yellow
+		transform translateY(-50%)
+		font-family 'IntroRegular'
+		
+	& p
+		margin 0
+		transform translateY(-20px)
+		
+.speaker-divider
+	width 90%
+	background $yellow
+	height 5px
+	margin 20px 0 35px
+	
+	@media all and (max-width: 992px)
+		width 100%
+	
+	&--right
+		margin-left 10%
+		
+		@media all and (max-width: 992px)
+			margin-left 0
+	
+	
+.speaker-list
+	list-style-type none
+	
+	&--mrg
+		margin-bottom 80px
+		
+		@media all and (max-width: 640px)
+			margin-bottom 30px
+	
+	&__item
+		margin-bottom 20px
+		padding-left 30px
+		position relative
+		
+		@media all and (max-width: 640px)
+			margin-bottom 10px
+		
+		&:before
+			content '•'
+			color $yellow
+			display inline-block
+			margin-right 20px
+			position absolute
+			left 0
+			
+.speaker-container
+	position relative
+	
+.speaker-photo
+	position absolute
+	top 0
+	z-index 1
+	
+	@media all and (max-width: 992px)
+		position relative
+		display block
+		margin 0 auto 20px
+		width 300px
+		
+	@media all and (max-width: 640px)
+		width 220px
+	
+	&--left
+		left 0
+		
+	&--right
+		right 0
+		
+
+.white-popup-block
+	background #fff
+	margin 40px auto
+	max-width 880px
+	padding 20px 30px
+	position relative
+	text-align left
+	
+.modal-form
+	margin-top 0
+	padding-top 30px
+	overflow hidden
