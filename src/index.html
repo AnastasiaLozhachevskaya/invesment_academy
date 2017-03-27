@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Krasavchiki</title>
+	<title>Investing Academy</title>
 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/countdown-widget.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/nc-main.css">
+	<link rel="stylesheet" type="text/css" href="css/clock.css">
 	<link rel="stylesheet" type="text/css" href="css/nc-responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -21,7 +20,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-4 no-pad">
-						<div class="footer__icon-block h-50">
+						<div class="footer__icon-block footer__icon-block--header h-50">
 							<div class="footer__icon footer__icon--phone footer__icon--header"></div>
 							<a href="tel:+380737606777">+38 (073) 76 06 777</a>
 						</div>
@@ -37,7 +36,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<a href="/">
+						<a href="/index.php">
 							<img class="header__logo" src="img/logo.png" alt="">
 						</a>						
 						<ol class="menu">
@@ -82,20 +81,9 @@
 				<h3>от мировых практиков с опытом более 10 лет</h3>
 			</div>
 			<h3 class="date yellow">1 апреля, Киев</h3>
-			<!-- <div class="clock">
-                <div class="countdown-widget light" data-day="27" data-month="6" data-year="2016" data-hr="16" data-min="0" data-sec="0"></div>
-            </div> -->
-            <!-- [ CLOCK ] -->
-				<div class="clock-wrp clock-wrp-1 animated s01 delay-0-6s" data-anim="fadeInUp">
-					<!-- <div class="container"> -->
-						<!-- <div class="flex-row gt40"> -->
-							<!-- <div class="flex-col-md-12"> -->
-								<div class="countdown-widget light" data-day="26" data-month="8" data-year="2018" data-hr="0" data-min="0" data-sec="0"></div>
-							<!-- </div> -->
-						<!-- </div> -->
-					<!-- </div> -->
+				<div class="clock-wrp clock-wrp-1">
+					<div class="countdown-widget light" data-day="1" data-month="4" data-year="2017" data-hr="22" data-min="0" data-sec="0"></div>	
 				</div>
-				<!-- [ END CLOCK ] -->
 			<a href="#takepart" class="btn btn--header js-link">Стать участником</a>
 		</div>
 	</header>
@@ -125,7 +113,7 @@
 					</div>
 					<div class="icon-list__item icon-list__item--bg icon-list__item--left intro-font white add-mgr">
 						<span class="yellow">количество мест </span><br>
-						Осталось 12<br>
+						Осталось<br>
 						<div class="icon-list__icon icon-list__icon--left icon-list__icon--count"></div>
 					</div>
 					
@@ -135,12 +123,12 @@
 						<h3 class="white">Забронируй место на</h3>
 						<h2 class="yellow aling-left">БЕСПЛАТНЫЙ</h2>
 						<h4 class="white">Мастер-Класс</h4>
-						<form action="" class="form">
+						<form id="forma1" action="" class="form" data-receivers="anton@fxpartners.com, redtargetinfo@gmail.com" data-header="Форма заявки 1">
 							<label for="name1" class="yellow">Имя</label>
-							<input id="name1" class="form__input" type="text">
+							<input id="name1" name="name" class="form__input" type="text" required placeholder="Ваше имя">
 							<label for="phone1" class="yellow">Телефон</label>
-							<input id="phone1" class="form__input" type="text">
-							<button class="btn btn-form">Записаться</button>
+							<input id="phone1" name="phone" class="form__input" type="text" required pattern="/^\d+$/" title="Неправильный формат ввода" placeholder="Телефон">
+							<button type="submit" class="btn btn-form" onclick="ga('send', 'event', 'ЗаявкаФорма1', 'Записаться')">Записаться</button>
 						</form>
 					</div>
 				</div>
@@ -282,7 +270,7 @@
 					</div>
 					<div class="icon-list__item icon-list__item--bg icon-list__item--left intro-font white add-mgr">
 						<span class="yellow">количество мест </span><br>
-						Осталось 12<br>
+						Осталось<br>
 						<div class="icon-list__icon icon-list__icon--left icon-list__icon--count"></div>
 					</div>
 					
@@ -292,12 +280,12 @@
 						<h3 class="white">Забронируй место на</h3>
 						<h2 class="yellow aling-left">БЕСПЛАТНЫЙ</h2>
 						<h4 class="white">Мастер-Класс</h4>
-						<form action="" class="form">
+						<form action="" class="form" data-receivers="anton@fxpartners.com, redtargetinfo@gmail.com" data-header="Форма заявки 2">
 							<label for="name1" class="yellow">Имя</label>
-							<input id="name1" class="form__input" type="text">
+							<input id="name1" name="name" class="form__input" type="text" required placeholder="Ваше имя">
 							<label for="phone1" class="yellow">Телефон</label>
-							<input id="phone1" class="form__input" type="text">
-							<button class="btn btn-form">Записаться</button>
+							<input id="phone1" name="phone" class="form__input" type="text" required pattern="/^\d+$/" title="Неправильный формат ввода" placeholder="Телефон">
+							<button type="submit" class="btn btn-form" onclick="ga('send', 'event', 'ЗаявкаФорма2', 'Записаться')">Записаться</button>
 						</form>
 					</div>
 				</div>
@@ -337,7 +325,7 @@
 			
 			<div class="row">
 				<div class="speaker-container">
-					<img class="speaker-photo speaker-photo--right" src="img/speaker.png" alt="">
+					<img class="speaker-photo speaker-photo--right" src="img/speaker2.png" alt="">
 					<div class="col-md-7">
 						<h4 class="blue">Дмитрий Колесников</h4>
 					</div>
@@ -364,7 +352,7 @@
 	<!-- speakers end -->
 
 	<!-- location start -->
-	<section class="blue-bg">
+	<section class="blue-bg" id="contacts">
 		<div class="half-background half-background--second"></div>
 		<div class="container">
 			<div class="row">
@@ -403,17 +391,17 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<form action="" class="form footer-form">
+					<form action="" class="form footer-form" data-receivers="anton@fxpartners.com, redtargetinfo@gmail.com" data-header="Консультация">
 						<div class="footer-form__item">
 							<label for="name1" class="blue footer-form__label">Имя</label>
-							<input id="name1" class="form__input footer-form__input" type="text">
+							<input id="name1" name="name" class="form__input footer-form__input" type="text" required placeholder="Ваше имя">
 						</div>
 						<div class="footer-form__item">
 							<label for="phone1" class="blue footer-form__label">Телефон</label>
-							<input id="phone1" class="form__input footer-form__input" type="text">
+							<input id="phone1" name="phone" class="form__input footer-form__input" type="text" required pattern="/^\d+$/" title="Неправильный формат ввода" placeholder="Телефон">
 						</div>
 						<div class="footer-form__item">
-							<button class="btn footer-form__btn">Записаться</button>
+							<button type="submit" class="btn footer-form__btn" onclick="ga('send', 'event', 'ЗаявкаФорма3', 'Консультация')">Записаться</button>
 						</div>
 					</form>
 				</div>
@@ -423,7 +411,7 @@
 	<!-- form3 end -->
 	
 	<!-- footer start -->
-	<footer class="footer" id="contacts">
+	<footer class="footer">
 		<div class="footer__contacts">
 			<div class="container">
 				<div class="row">
@@ -471,32 +459,20 @@
 			<h2 class="blue">Остались Вопросы?</h2>
 			<h3 class="yellow">Оставьте свой номер телефона и специалист с опытом более 10 лет вас проконсультирует</h3>
 		</div>
-		<form action="" class="form footer-form modal-form">
+		<form action="" class="form footer-form modal-form" data-receivers="anton@fxpartners.com, redtargetinfo@gmail.com" data-header="Заказать звонок" action="">
 			<div class="footer-form__item">
 				<label for="name1" class="blue footer-form__label">Имя</label>
-				<input id="name1" class="form__input footer-form__input" type="text">
+				<input id="name1" name="name" class="form__input footer-form__input" type="text" required placeholder="Ваше имя">
 			</div>
 			<div class="footer-form__item">
 				<label for="phone1" class="blue footer-form__label">Телефон</label>
-				<input id="phone1" class="form__input footer-form__input" type="text">
+				<input id="phone1" name="phone" class="form__input footer-form__input" type="text" required pattern="/^\d+$/" title="Неправильный формат ввода" placeholder="Телефон">
 			</div>
 			<div class="footer-form__item">
-				<button class="btn footer-form__btn">Записаться</button>
+				<button type="submit" class="btn footer-form__btn" onclick="ga('send', 'event', 'ЗаявкаФорма3', 'Консультация')">Записаться</button>
 			</div>
 		</form>
 	</div>
-
-	<!-- <form data-header="Platinum’s SMM -35%" class="serv_form" data-receivers="pm@mamontovadesign.com, ceo@mamontovadesign.com" action="">
-			<input required name="name" type="text" placeholder="Ваше имя">
-			<input required pattern=".+@.+\..+" title="Введите корректный e-mail" name="mail" type="text" placeholder="Ваш E-mail">
-			<input required name="skype" type="text" placeholder="Skype">
-			<select name="choice" id="" class="pop_month">
-				<option value="3">Platinum SMM на 3 месяца</option>
-				<option value="6">Platinum SMM на 6 месяцев</option>
-				<option value="12">Platinum SMM на 12 месяцев</option>
-			</select>
-			<button type="submit">Отправить заявку</button>
-		</form> -->
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/appear.min.js"></script>
@@ -504,8 +480,59 @@
 	<script type="text/javascript" src="js/countto.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/nc-common.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/clock.js"></script>
+	<script type="text/javascript" src="js/sendform.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter43641874 = new Ya.Metrika({
+	                    id:43641874,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/43641874" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+
+	<!-- Gogle.analytics counter -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-96006094-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<!-- /Gogle.analytics counter -->
+
+	<!-- vk.pixel counter -->
+	<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=WIJEM0IBybFXUdtu1SDlPNKyAbE3MtwDEh5LHXo4cKCMlBqSNXY71NiVG7zd362CqfvDNUNv3dlXlyOsDRvs6sbkd1iLNE2MjBnzfbdhG3xVWVlM8PCqmfodkINvN9JSwR52kY/3YE3zK5b4dmpISwHSEdKHmkZU64OGhDi9X*8-&pixel_id=1000094407';</script>
+	<!-- /vk.pixel counter -->
+
+	
+
 </body>
 </html>

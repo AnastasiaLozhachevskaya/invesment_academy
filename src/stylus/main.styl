@@ -28,19 +28,36 @@ h1
 	font-size 60px
 	margin-bottom 70px
 	
+	@media all and (max-width: 1400px)
+		font-size 37px
+		margin-bottom 30px
+		
+	// @media all and (max-width: 768px)
+	// 	font-size 50px
+	
 	@media all and (max-width: 640px)
 		font-size 30px
 		margin-bottom 30px
+		
+
 	
 h2
 	font-size 48px
 	text-align center
+	
+	@media all and (max-width: 1400px)
+		.hero &
+			font-size 30px
 	
 	@media all and (max-width: 640px)
 		font-size 25px
 	
 h3
 	font-size 30px
+	
+	@media all and (max-width: 1400px)
+		.hero &
+			font-size 23px
 	
 	@media all and (max-width: 640px)
 		font-size 20px
@@ -53,6 +70,10 @@ h4
 	
 h5
 	font-size 55px
+	
+	@media all and (max-width: 1400px)
+		.hero &
+			font-size 35px
 	
 	@media all and (max-width: 640px)
 		font-size 30px
@@ -177,13 +198,6 @@ section
 
 	@media all and (max-width: 992px)
 		display block
-
-
-// .hamburger-inner,
-// .hamburger-inner::after,
-// .hamburger-inner::before 
-//     background-color $blue-heading
-
 	
 .btn
 	background linear-gradient($yellow, $dark-yellow)
@@ -202,6 +216,7 @@ section
 	border none
 	transition 2s
 	font-family 'IntroRegular'
+	border-radius 0
 	
 	@media all and (max-width: 640px)
 		height 50px
@@ -257,6 +272,7 @@ section
 	&__nav
 		background-color #fff
 		padding 25px 0
+		box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, .3);
 		
 		@media all and (max-width: 640px)
 			padding 0
@@ -288,13 +304,19 @@ section
 		color $yellow !important
 
 .hero
-	padding 130px 0 130px
-	padding 230px 0 130px
+	// padding 130px 0 130px
+	padding 200px 0 130px
 	width 100%
-	// height 100vh
+	height auto
 	background url('../img/hero-bg.jpg') no-repeat
 	background-size cover
 	text-align center
+	
+	@media all and (max-width: 1400px)
+		padding 170px 0 30px
+	
+	@media all and (min-width: 640px)
+		height 100vh
 	
 	@media all and (max-width: 640px)
 		padding 130px 0 40px
@@ -304,8 +326,14 @@ section
 	line-height 1.1
 	margin-bottom 50px
 	
+	@media all and (max-width: 1400px)
+		margin-bottom 20px
+	
 .date
-	margin-bottom 60px
+	margin-bottom 10px
+	
+	@media all and (max-width: 1400px)
+		margin-bottom 0
 	
 .half-background
 	position absolute
@@ -481,15 +509,28 @@ section
 	color #fff
 	font-size 14px
 	
+	&--thanks
+		position absolute
+		bottom 0
+		left 0
+		width 100%
+		z-index 100
+	
 	&__icon-block
 		position relative
 		padding-left 45px
-		font-size 16px
+		font-size 13px
 		text-align left
 		padding-top 5px
 		padding-bottom 6px
 		margin auto
-	
+		
+		&--header
+			font-size 16px
+			
+			@media all and (max-width: 640px)
+				padding-left 0
+			
 	&__icon
 		width 30px
 		height 30px
@@ -513,6 +554,9 @@ section
 		&--header
 			left 15px
 			
+			@media all and (max-width: 640px)
+				display none
+				
 	& a
 		transition .2s
 		color $yellow
@@ -666,3 +710,10 @@ section
 	margin-top 0
 	padding-top 30px
 	overflow hidden
+	
+.thanks-logo
+	display block
+	margin 0 auto 90px
+	
+.thanks-h1
+	margin-bottom 0
